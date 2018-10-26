@@ -1,0 +1,7 @@
+#footerCenter{
+    /* position:absolute; */
+    padding: 10;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+}
