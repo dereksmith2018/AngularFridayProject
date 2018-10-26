@@ -1,5 +1,5 @@
-#footerCenter{
-    /* position:absolute; */
+.footerCenter{
+    position:absolute;
     padding: 10;
     bottom: 0;
     overflow: hidden;
