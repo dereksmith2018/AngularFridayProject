@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { TitleImageComponent } from './title-image/title-image.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
+import { WeatherUpdateComponent } from './weather-update/weather-update.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { DropdownComponent } from './dropdown/dropdown.component';
     FooterComponent,
     TitleImageComponent,
     DropdownComponent,
+    WeatherUpdateComponent,
   ],
   imports: [
     BrowserModule,
