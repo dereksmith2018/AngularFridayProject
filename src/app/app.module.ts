@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { TitleImageComponent } from './title-image/title-image.component';
-import { DateFunctionComponent } from './date-function/date-function.component';
 
 
 @NgModule({
@@ -14,8 +13,6 @@ import { DateFunctionComponent } from './date-function/date-function.component';
     HeaderComponent,
     FooterComponent,
     TitleImageComponent,
-    DateFunctionComponent,
-
   ],
   imports: [
     BrowserModule,
