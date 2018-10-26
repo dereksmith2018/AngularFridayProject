@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { TitleImageComponent } from './title-image/title-image.component';
+import { DropdownComponent } from './dropdown/dropdown.component';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { TitleImageComponent } from './title-image/title-image.component';
     HeaderComponent,
     FooterComponent,
     TitleImageComponent,
+    DropdownComponent,
   ],
   imports: [
     BrowserModule,

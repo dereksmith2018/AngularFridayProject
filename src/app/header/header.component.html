@@ -1,11 +1,30 @@
 
 
  <div id="topnav">
-    <a class="active" href="/">Book Your Trip</a>
-    <a href="#menu">Live Chat</a>
-    <a href="/">Employment</a>
-    <a href="https://">Hours</a>
-    <button type="menu" class="btn btn-success">English</button>
+    <!-- <a class="active" href="/">Book Your Trip</a> -->
+    <div class="dropdown">
+    <button onclick="showDropdownButton()" class='dropbtn'>BOOK YOUR TRIP</button>
+    <div id="myDropdown" class="dropdown-content">
+
+    <a href="#home">2-DAY DEALS</a>
+    <a href="#about">NIGHT TICKET DEALS</a>
+    <a href="#contact">LESSON PROGRAMS</a>
+  </div>
+    <a href="#menu">LIVE CHAT</a>
+    <a id="hide">..........................................................................................................................................................................................................................</a>
+    <a href="/">EMPLOYMENT</a>
+    <a href="https://">HOURS</a>
+    <div class="dropdown">
+    <button onclick="showDropdownButton()" class='dropbtn'>ENGLISH</button>
+    <div id="myDropdown" class="dropdown-content">
+     
+    <a href="#home">CHINESE</a>
+    <a href="#about">ENGLISH</a>
+    <a href="#contact">FRENCH</a>
+    <a href="#about">JAPENESE</a>
+    <a href="#contact">SPANISH</a>
+  </div>
+    </div>  
     <!-- <input type="text" placeholder="Search..">
     <a href="#" class="fa fa-facebook"></a>
     <a href="#" class="fa fa-twitter"></a>
@@ -15,3 +34,25 @@
     <a href="#" class="fa fa-instagram"></a>
     <a href="#" class="fa fa-pinterest"></a> -->
   </div>
+
+  <!-- <script>
+   
+    function showDropdownButton() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+  
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+    
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script> -->
