@@ -5,3 +5,6 @@
     overflow: hidden;
     width: 100%;
 }
+.footerBottom{
+    bottom:0;
+}
