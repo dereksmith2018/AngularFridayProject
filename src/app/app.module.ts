@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { TitleImageComponent } from './title-image/title-image.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
 import { WeatherUpdateComponent } from './weather-update/weather-update.component';
+import { MapComponent } from './map/map.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { WeatherUpdateComponent } from './weather-update/weather-update.componen
     TitleImageComponent,
     DropdownComponent,
     WeatherUpdateComponent,
+    MapComponent,
   ],
   imports: [
     BrowserModule,
