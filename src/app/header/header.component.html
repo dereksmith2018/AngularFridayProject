@@ -1,51 +1,54 @@
 <html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <body>
-<div id="topnav">
-  <!-- <a class="active" href="/">Book Your Trip</a> -->
-  <div id="topButton" class="dropdown">
-    <button onclick="myFunction()" class='dropbtn'>BOOK YOUR TRIP »</button>
-    
-    <div id="myDropdown" class="dropdown-content">
-      <a href="#deals">2-DAY DEALS</a>
-      <a href="#passes">PASSES </a>
-      <a href="#lessons">LESSON PROGRAMS</a>
+  <div id="topnav">
+    <!-- <a class="active" href="/">Book Your Trip</a> -->
+    <div id="topButton" class="dropdown">
+      <button onclick="myFunction()" class='dropbtn'>BOOK YOUR TRIP »</button>
+
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#deals">2-DAY DEALS</a>
+        <a href="#passes">PASSES </a>
+        <a href="#lessons">LESSON PROGRAMS</a>
+      </div>
     </div>
-  </div>
-      <a href="#menu">LIVE CHAT</a>
-  
-      <div id="topButtonTwo"style="float:right" class="dropdown">
-          <button onclick="myFunction()" class="dropbtn">ENGLISH »</button>
-            <div id="myDropdown" class="dropdown-content">
-              <a href="#chinese">CHINESE</a>
-              <a href="#english">ENGLISH</a>
-              <a href="#french">FRENCH</a>
-              <a href="#japanse">JAPANESE</a>
-              <a href="#spanish">SPANISH</a>
-            </div>
-          </div>
+    <a href="#menu">LIVE CHAT</a>
+
+    <div id="topButtonTwo"style="float:right" class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">ENGLISH »</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#chinese">CHINESE</a>
+        <a href="#english">ENGLISH</a>
+        <a href="#french">FRENCH</a>
+        <a href="#japanse">JAPANESE</a>
+        <a href="#spanish">SPANISH</a>
+      </div>
+    </div>
     <a style="float:right" href="https://">HOURS</a>
     <a style="float:right"  href="/">EMPLOYMENT</a>
   </div>
   <script>
-      function myFunction() {
-          document.getElementById("myDropdown").classList.toggle("show");
-      }
-      window.onclick = function(event) {
-        if (!event.target.matches('.dropbtn')) {
-      
-          var dropdowns = document.getElementsByClassName("dropdown-content");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-              openDropdown.classList.remove('show');
-            }
-          }
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
         }
       }
-      </script>
-      </body>
-      </html>
+    }
+  }
+  </script>
+</body>
+</html>
 
 
 
