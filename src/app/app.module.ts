@@ -9,6 +9,9 @@ import { TitleImageComponent } from './title-image/title-image.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
 import { WeatherUpdateComponent } from './weather-update/weather-update.component';
 import { MapComponent } from './map/map.component';
+import { AdvertisementComponent } from './advertisement/advertisement.component';
+
+
 
 
 @NgModule({
@@ -20,11 +23,13 @@ import { MapComponent } from './map/map.component';
     DropdownComponent,
     WeatherUpdateComponent,
     MapComponent,
+    AdvertisementComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

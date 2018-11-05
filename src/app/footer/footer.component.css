@@ -1,10 +1,48 @@
+
 .footerCenter{
-    position:absolute;
+   text-align: center;
     padding: 10;
     bottom: 0;
-    overflow: hidden;
+    
     width: 100%;
+    font-size: 9px;
 }
 .footerBottom{
     bottom:0;
+    background-color: #003333;
+    
+}
+.footHeadColor{
+    color:#008080;
+}
+li{
+    list-style-type:none;
+}
+#row2{
+   text-align: center; 
+}
+#row3{
+    right: 50px;
+}
+#leftList{
+ padding: 20px;
+}
+#rightList{
+right:0px;
+padding: 20px;
+border-right:2px solid #008080;
+}
+#centerList{
+    
+padding:20px;
+}
+#socialLinks{
+align-content: center;
+padding:20px;
+}
+p{
+    color:white;
+}
+a{
+    color:white;
 }
