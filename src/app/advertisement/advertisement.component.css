@@ -1,12 +1,8 @@
-.column{
+img{
+    display: inline;
     margin-left: auto;
     margin-right: auto;
-    
-}
-img{
-    display: inline-block;
-    padding-left: 150px;
-    padding-right: 150px;
-  
-    
+    padding-left: 110px;
+    padding-right: 110px;
+    align-items: center;
 }

@@ -10,6 +10,9 @@
 .footerBottom{
     bottom:0;
     background-color: #003333;
+    float: none;
+    margin: 0 auto;
+
     
 }
 .footHeadColor{
@@ -36,13 +39,25 @@ border-right:2px solid #008080;
     
 padding:20px;
 }
-#socialLinks{
-align-content: center;
-padding:20px;
-}
+#socialBox #social {
+    text-align: center;
+  }
+  
+  #socialBox #social ul {
+    float: left;
+  }
+  
+  #socialBox #social ul li {
+    float: left;
+    padding-left: 10px;
+    list-style-type: none;
+  }
 p{
     color:white;
 }
 a{
     color:white;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
 }
