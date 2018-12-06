@@ -7,14 +7,28 @@
   <title>Weather</title>
 </head>
 <body>
-  <input type="text" (keyup.enter)="add(summit)" #summit>
-   <p>See what available mountain paths are open</p> 
-  <button (click)="ngOnDestroy()">Close updating of weather</button>
-  <ul><li *ngFor="let summits of summit$ | async">{{summits.$value}}</li></ul>
- 
+  <p>Available Snow Instructors(enter)</p> 
+  <input type="text" (keyup.enter)="addRoute(summit)" #summit>
+  
+  <ul><li *ngFor="let summits of summit$ | async">{{summits.$value}}<button  ><i (click)="updateSummit(summits)" class= " fa fa-pencil"></i></button>
+    <!-- <div *ngIf="updateItem && summitToUpdate.id == summit.id"> -->
+    <!-- <form (ngSubmit)="updateSummit(summit)">
+      <div class="row">
+        <div class="input-field col-6">
+          <input type="text" placeholder="Add Summit" [(ngModel)]="summit.description" name="description">
+          
+        </div>
+        <input type="submit" value="Submit" class="btn">
+      </div>
+    </form>
+  </div> -->
+  <button (click)="delete(summits)">Delete</button></li></ul>
+  <button (click)="ngOnDestroy()">Click to shut down database</button>
   <!-- <p>{{summits$ | async | json}}</p> -->
- Available snowboarding coaches
- <ul *ngIf="snowboarders$ | async as snowboarders"><li>Coach: {{ snowboarders.name}}, Cost Per Hour: ${{ snowboarders.skill}}</li></ul>
+ <!-- <p>Available snowboarding coaches</p>
+ <input type="text" (keyup.enter)="addCoach(snowboarders)" #snowboarders>
+ <ul><li *ngFor="let snowboarders of snowboarder$ | async">Coach: {{ (snowboarders$ | async).name }}, Cost Per Minute: ${{ (snowboarders$ | async).cost }}</li></ul> -->
+ <!-- <ul *ngIf="snowboarders$ | async as snowboarders"><li>Coach: {{ snowboarders.name}}, Cost Per Hour: ${{ snowboarders.skill}}</li></ul> -->
 <!-- <ul *ngIf="snowboarders$ | async">
     <li>Coach: {{ (snowboarders$ | async).name }}, Cost Per Minute: ${{ (snowboarders$ | async).skill }}</li>
   </ul> -->

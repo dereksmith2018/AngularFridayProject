@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AngularFireModule} from 'angularfire2';
-import { AngularFireDatabaseModule} from 'angularfire2/database';
+import { AngularFireDatabaseModule, AngularFireDatabase} from 'angularfire2/database';
 
 import { FormsModule }  from '@angular/forms';
 import { HttpModule } from '@angular/http';
@@ -14,6 +14,7 @@ import { WeatherUpdateComponent } from './weather-update/weather-update.componen
 import { MapComponent } from './map/map.component';
 import { AdvertisementComponent } from './advertisement/advertisement.component';
 import { environment } from '../environments/environment';
+import { RouterModule, Routes} from '@angular/router';
 
 
 
@@ -33,10 +34,14 @@ import { environment } from '../environments/environment';
     BrowserModule,
     FormsModule,
     HttpModule,
+   
+    RouterModule.forRoot([
+      {path:"weather-update", component:WeatherUpdateComponent}
+    ]),
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule
   ],
-  providers: [],
+  providers: [AngularFireDatabase],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
