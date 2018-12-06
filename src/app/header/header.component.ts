@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { WeatherUpdateComponent } from '../weather-update/weather-update.component'
 
 @Component({
     selector: 'app-header',

@@ -1,4 +1,23 @@
-
-  <ul><li *ngFor="let summits of summit">{{summits.$value}}</li></ul>
-See what available mountain paths are open
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Weather</title>
+</head>
+<body>
+  <input type="text" (keyup.enter)="add(summit)" #summit>
+   <p>See what available mountain paths are open</p> 
+  <button (click)="ngOnDestroy()">Close updating of weather</button>
+  <ul><li *ngFor="let summits of summit$ | async">{{summits.$value}}</li></ul>
+ 
+  <!-- <p>{{summits$ | async | json}}</p> -->
+ Available snowboarding coaches
+ <ul *ngIf="snowboarders$ | async as snowboarders"><li>Coach: {{ snowboarders.name}}, Cost Per Hour: ${{ snowboarders.skill}}</li></ul>
+<!-- <ul *ngIf="snowboarders$ | async">
+    <li>Coach: {{ (snowboarders$ | async).name }}, Cost Per Minute: ${{ (snowboarders$ | async).skill }}</li>
+  </ul> -->
+</body>
+</html>
 
