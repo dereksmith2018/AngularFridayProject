@@ -10,7 +10,7 @@
   <p>Available Snow Instructors(enter)</p> 
   <input type="text" (keyup.enter)="addRoute(summit)" #summit>
   
-  <ul><li *ngFor="let summits of summit$ | async">{{summits.$value}}<button  ><i (click)="updateSummit(summits)" class= " fa fa-pencil"></i></button>
+  <ul><li *ngFor="let summits of summit$ | async">{{summits.$value}}<button  ><i (click)="updateSummit(summits)" class= " fa fa-pencil">Add to Manager List</i></button>
     <!-- <div *ngIf="updateItem && summitToUpdate.id == summit.id"> -->
     <!-- <form (ngSubmit)="updateSummit(summit)">
       <div class="row">

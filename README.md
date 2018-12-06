@@ -1,6 +1,10 @@
 # Summit at Snoqalmie
 
-#### \_\_
+#### Deployment
+To start:
+npm i
+ng serve -o to open a server.
+Navigate to http://localhost:4200.
 
 #### By Derek Smith
 
